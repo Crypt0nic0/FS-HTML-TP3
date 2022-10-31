@@ -5,111 +5,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>HTML - TP3</title>
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="nav-menu">
-            <ul>
-                <li>ACCUEIL</li>
-                <li>BUSINESS SCHOOL</li>
-                <li>ECOLE ESPORT</li>
-                <li>COURS DE JEUX VIDEOS</li>
-                <li>LE CAMPUS</li>
-                <li>NEWSROOM</li>
-                <li>PARENTS</li>
-            </ul>
-        </div>
-        <div class="nav-language">
-            <button id="btn-lang">FR / EN</button>
-        </div>
+    <nav>
+        <ul>
+            <li>ACCUEIL</li>
+            <li>BUSINESS SCHOOL</li>
+            <li>ECOLE ESPORT</li>
+            <li>COURS DE JEUX VIDEO</li>
+            <li>LE CAMPUS</li>
+            <LI>NEWSROOM</LI>
+            <li>PARENTS</li>
+            <li id="language">FR / EN</li>
+        </ul>
     </nav>
 
-    <header class="header">
-        <div class="header-container">
-            <img src="./assets/img/logo-gc-hero.png" alt="logo-header">
-            <h1>PASSION. PROFESSIONNALISME. PERFORMANCE</h1>
-            <button id="btn-header-video">GAMING CAMPUS EN VIDEO ></button>
+    <header>
+        <div class="main-hearder">
+            <div id="logo">
+                <img src="./assets/img/logo-gc-hero.png" alt="logo">
+            </div>
+            <h1>Passion. Professionnalisme. Performance</h1>
+            <button>GAMING CAMPUS EN VIDEO <i class="fa-solid fa-angle-right"></i></button>
         </div>
     </header>
 
-    <div class="containter-txt">
+    <div class="header-text">
         <p>
             Imaginé par des professionnels des jeux vidéo et de l'éducation, Gaming Campus est un lieu unique pour
             révéler les talents et développer les compétences.
         </p>
     </div>
 
-    <section class="logo">
-        <div class="container-logo">
-            <img src="./assets/img/logo-gbs-home.png" alt="logo-gbs" class="logo-img">
-            <h3 class="logo-title">GAMING BUSINESS SCHOOL</h3>
-            <p class="logo-txt">
-                Formez vous dans la première école de management dédiée aux enjeux et métiers du jeu-vidéo
-            </p>
-            <button class="btn-more">EN SAVOIR PLUS</button>
-        </div>
-        <div class="container-logo">
-            <img src="./assets/img/logo-ga-home.png" alt="logo-ga" class="logo-img">
-            <h3 class="logo-title">GAMING ACADEMY</h3>
-            <p class="logo-txt">
-                Entrainez-vous dans des conditions optimales pour devenir esportif professsionnel.
-            </p>
-            <button class="btn-more">EN SAVOIR PLUS</button>
-        </div>
-        <div class="container-logo">
-            <img src="./assets/img/logo-gg-home.png" alt="logo-gg" class="logo-img">
-            <h3 class="logo-title">GAMING GURU</h3>
-            <p class="logo-txt">
-                Jouez avec les meilleurs gamers pour vous améliorer dans vos jeux vidéo préférés.
-            </p>
-            <button class="btn-more">EN SAVOIR PLUS</button>
-        </div>
-    </section>
-
-    <section class="news">
-        <div class="news-info">
-            <div class="news-info-left">
-                <h3>LES NEWS DU CAMPUS</h3>
-                <p>
-                    Suivez l'actualité de Gaming Campus, de G.GURU, G.B.S. et G.Academy.
-                </p>
-            </div>
-            <div class="news-info-right">
-                <button id="btn-info">LA NEWSROOM ></button>
-            </div>
-        </div>
-        <div class="news-container">
-            <div class="news-article" class="news-link">
-                <img src="./assets/img/ri8decembre.jpg" alt="img-art1">
-                <h4>Réunion d'informations 19 décembre</h4>
-                <p>
-                    Venez à notre rencontre lors de cette réunions d'informations...
-                </p>
-                <a href="#">SUR INSCRIPTION ></a>
-            </div>
-            <div class="news-article" class="news-link">
-                <img src="./assets/img/pgw18home.jpg" alt="img-art2">
-                <h4>Paris Games Week 2018 et réunions d'information</h4>
-                <p>
-                    Pendant tout le mois d'octobre, venez rencontrer l'équipe pédagogique...
-                </p>
-                <a href="#">LIRE LA SUITE ></a>
-            </div>
-            <div class="news-article" class="news-link">
-                <img src="./assets/img/inauguration_gaming_campus_photo.jpg" alt="img-art3">
-                <h4>Inauguration Gaming Campus Lyon</h4>
-                <p>
-                    Revivez l'inauguration du Gaming Campus Lyon...
-                </p>
-                <a href="#" class="news-link">LIRE LA SUITE ></a>
+    <section class="icon-part">
+        <div class="icon-part-container">
+            <div class="list-icon-part">
+                <div class="lip-logo">
+                    <img src="./assets/img/logo-gbs-home.png" alt="logo GBS">
+                    <h3>GAMING BUSINESS SCHOOL</h3>
+                    <p>
+                        Formez-vous dans la première école de management dédiée aux enjeux et métiers du jeuxvidéo.
+                    </p>
+                    <button>EN SAVOIR PLUS</button>
+                </div>
+                <div class="lip-logo">
+                    <img src="./assets/img/logo-ga-home.png" alt="logo GA">
+                    <h3>GAMING ACADEMY</h3>
+                    <p>
+                        Entrainez-vous dans des conditions optimales pour devenir esportif professionnel.
+                    </p>
+                    <button>EN SAVOIR PLUS</button>
+                </div>
+                <div class="lip-logo">
+                    <img src="./assets/img/logo-gg-home.png" alt="logo GG">
+                    <h3>GAMING GURU</h3>
+                    <p>
+                        Jouez avec les meilleurs gamers pour vous améliorer dans vos jeux vidéo préférés.
+                    </p>
+                    <button>EN SAVOIR PLUS</button>
+                </div>
             </div>
         </div>
     </section>
-
-    <section></section>
-
 </body>
 
 </html>
